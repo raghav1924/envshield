@@ -58,3 +58,4 @@ describe('SchemaValidator Type Verification & Linter', () => {
     assert.ok(trap, 'Should warn about Boolean("false") pitfall in JS');
   });
 });
+

@@ -56,3 +56,4 @@ export class TemplateGenerator {
     return 'placeholder_value';
   }
 }
+

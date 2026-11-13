@@ -119,3 +119,4 @@ When you launch `envshield studio`, open `http://localhost:5151` in your browser
 ## 📄 License
 
 Licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
+

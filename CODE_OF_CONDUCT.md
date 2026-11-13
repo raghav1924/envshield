@@ -12,3 +12,4 @@ We as members, contributors, and leaders pledge to make participation in the Env
 * Collaborating openly and reporting configuration issues responsibly
 
 Maintainer: **[Jatin Sharma](https://jatinsh.netlify.app/)** • [raghavjatin245@gmail.com](mailto:raghavjatin245@gmail.com)
+

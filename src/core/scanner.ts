@@ -132,3 +132,4 @@ export class SecretScanner {
     return findings;
   }
 }
+

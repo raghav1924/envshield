@@ -74,3 +74,4 @@ export interface EnvAuditReport {
   driftReports: DriftComparison[];
   healthScore: number; // 0 - 100
 }
+

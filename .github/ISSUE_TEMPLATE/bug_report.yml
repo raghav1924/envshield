@@ -19,3 +19,4 @@ body:
       description: Sample env snippet (redacting any private secrets).
     validations:
       required: false
+
