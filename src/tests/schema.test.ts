@@ -57,5 +57,26 @@ describe('SchemaValidator Type Verification & Linter', () => {
     const trap = issues.find(i => i.rule === 'BOOLEAN_STRING_TRAP');
     assert.ok(trap, 'Should warn about Boolean("false") pitfall in JS');
   });
+
+  it('validates email formats and numeric ranges correctly', () => {
+    const customSchema: EnvSchema = {
+      variables: {
+        ADMIN_EMAIL: { type: 'email', required: true },
+        MAX_RETRIES: { type: 'number', required: true },
+      },
+    };
+    const validRaw = `ADMIN_EMAIL=ops@company.io\nMAX_RETRIES=5`;
+    const invalidRaw = `ADMIN_EMAIL=notanemail\nMAX_RETRIES=notanumber`;
+    
+    const validParsed = EnvParser.parse(validRaw);
+    const invalidParsed = EnvParser.parse(invalidRaw);
+
+    const validIssues = SchemaValidator.validate(validParsed, customSchema);
+    const invalidIssues = SchemaValidator.validate(invalidParsed, customSchema);
+
+    assert.strictEqual(validIssues.length, 0);
+    assert.ok(invalidIssues.some(i => i.rule === 'INVALID_EMAIL_FORMAT'));
+    assert.ok(invalidIssues.some(i => i.rule === 'INVALID_NUMERIC_TYPE'));
+  });
 });
 
