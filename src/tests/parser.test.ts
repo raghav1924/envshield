@@ -54,4 +54,12 @@ describe('EnvParser Tokenizer & Parser', () => {
     assert.strictEqual(parsed.entries['JWT_AUDIENCE']?.value, 'api_gateway');
     assert.strictEqual(parsed.entries['RATE_LIMIT']?.value, '100');
   });
+
+  it('handles CRLF line breaks and whitespace around equals signs gracefully', () => {
+    const raw = "APP_NAME = \"Acme App\"\r\nAPP_ENV = staging\r\nEMPTY_VAL=\r\n";
+    const parsed = EnvParser.parse(raw);
+    assert.strictEqual(parsed.entries['APP_NAME']?.value, 'Acme App');
+    assert.strictEqual(parsed.entries['APP_ENV']?.value, 'staging');
+    assert.strictEqual(parsed.entries['EMPTY_VAL']?.value, '');
+  });
 });
