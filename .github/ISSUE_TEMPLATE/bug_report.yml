@@ -1,0 +1,21 @@
+name: Bug Report
+description: Create a report to help improve EnvShield
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for filing a bug report for EnvShield!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the issue and expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: env-sample
+    attributes:
+      label: Environment File Sample
+      description: Sample env snippet (redacting any private secrets).
+    validations:
+      required: false

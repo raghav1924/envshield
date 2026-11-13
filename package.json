@@ -1,0 +1,38 @@
+{
+  "name": "envshield",
+  "version": "1.0.0",
+  "description": "Developer-first Environment Variable Linter, Secret Leak Detector, Schema Type Validator & Visual Drift Studio.",
+  "main": "dist/index.js",
+  "bin": {
+    "envshield": "./dist/bin.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "start": "node dist/bin.js studio",
+    "test": "node --test dist/tests/**/*.test.js"
+  },
+  "keywords": [
+    "dotenv",
+    "env",
+    "environment-variables",
+    "secret-scanner",
+    "linter",
+    "drift-detection",
+    "devops",
+    "security",
+    "developer-tools",
+    "cli"
+  ],
+  "author": "Jatin Sharma <raghavjatin245@gmail.com> (https://jatinsh.netlify.app/)",
+  "homepage": "https://jatinsh.netlify.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raghav1924/envshield.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+
