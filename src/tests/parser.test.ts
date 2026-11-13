@@ -44,4 +44,14 @@ describe('EnvParser Tokenizer & Parser', () => {
     const parsed = EnvParser.parse(raw);
     assert.strictEqual(parsed.entries['BASE_URL']?.value, 'http://localhost:8080/api');
   });
+
+  it('strips bash export prefixes cleanly from variable declarations', () => {
+    const raw = `
+      export JWT_AUDIENCE=api_gateway
+      export RATE_LIMIT=100
+    `;
+    const parsed = EnvParser.parse(raw);
+    assert.strictEqual(parsed.entries['JWT_AUDIENCE']?.value, 'api_gateway');
+    assert.strictEqual(parsed.entries['RATE_LIMIT']?.value, '100');
+  });
 });
