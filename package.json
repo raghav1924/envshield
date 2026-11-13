@@ -10,6 +10,7 @@
     "build": "tsc",
     "dev": "tsc -w",
     "start": "node dist/bin.js studio",
+    "bench": "node dist/scripts/benchmark.js",
     "test": "node --test dist/tests/**/*.test.js"
   },
   "keywords": [

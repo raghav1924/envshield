@@ -72,3 +72,4 @@ The drift analyzer performs set-theoretic comparisons:
 ## Zero-Dependency Guarantee
 
 EnvShield exclusively relies on Node.js standard modules (`node:fs`, `node:path`, `node:http`, `node:crypto`). This guarantees sub-50ms execution times and compatibility with any minimal container environment.
+

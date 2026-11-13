@@ -73,3 +73,4 @@ RUN npm ci && npm run build
 # Audit environment templates before final image creation
 RUN node dist/bin.js check --env .env.example --strict
 ```
+
