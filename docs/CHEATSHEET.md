@@ -25,3 +25,4 @@ Author: [Jatin Sharma](https://jatinsh.netlify.app/) (`@raghav1924`)
 #!/bin/sh
 npx envshield check --env .env.local --fail-on-secrets
 ```
+

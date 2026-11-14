@@ -26,3 +26,4 @@ Staging environments often clone production databases without sanitizing API key
 ```bash
 node dist/bin.js check --env .env.staging --fail-on-secrets
 ```
+
