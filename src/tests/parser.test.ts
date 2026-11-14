@@ -62,4 +62,20 @@ describe('EnvParser Tokenizer & Parser', () => {
     assert.strictEqual(parsed.entries['APP_ENV']?.value, 'staging');
     assert.strictEqual(parsed.entries['EMPTY_VAL']?.value, '');
   });
+
+  it('ignores empty blank lines and comment-only lines seamlessly', () => {
+    const raw = `
+      # Header section comment
+      
+      API_HOST=api.internal.net
+      
+      # Another section
+      API_PORT=9090
+      
+    `;
+    const parsed = EnvParser.parse(raw);
+    assert.strictEqual(Object.keys(parsed.entries).length, 2);
+    assert.strictEqual(parsed.entries['API_HOST']?.value, 'api.internal.net');
+    assert.strictEqual(parsed.entries['API_PORT']?.value, '9090');
+  });
 });
