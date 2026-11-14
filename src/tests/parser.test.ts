@@ -78,4 +78,14 @@ describe('EnvParser Tokenizer & Parser', () => {
     assert.strictEqual(parsed.entries['API_HOST']?.value, 'api.internal.net');
     assert.strictEqual(parsed.entries['API_PORT']?.value, '9090');
   });
+
+  it('respects last-write-wins semantics for duplicate variable keys', () => {
+    const raw = `
+      PORT=3000
+      PORT=8080
+    `;
+    const parsed = EnvParser.parse(raw);
+    assert.strictEqual(parsed.entries['PORT']?.value, '8080');
+    assert.strictEqual(parsed.entries['PORT']?.line, 3);
+  });
 });
