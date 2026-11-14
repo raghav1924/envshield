@@ -27,7 +27,7 @@ In modern microservices, full-stack monorepos, and cloud deployments, environmen
 - 📝 **Sanitized Template Generator:** Auto-synthesize clean `.env.example` templates with smart masked placeholders.
 - 🎨 **Dark-Mode Visual Studio:** Explore cross-environment drift matrices, secret leak audits, and schema linters on `http://localhost:5151`.
 - ⚡ **Zero External Dependencies:** Built with pure TypeScript on Node.js standard libraries (`node:fs`, `node:path`, `node:http`, `node:crypto`).
-- ⚡ **Blazing Fast Performance:** Benchmarks show 200,000+ lines/sec parsing and sub-50ms Shannon entropy scans. See [ARCHITECTURE.md](ARCHITECTURE.md) and [docs/RECIPES.md](docs/RECIPES.md) for details.
+- ⚡ **Blazing Fast Performance:** Benchmarks show 200,000+ lines/sec parsing and sub-50ms Shannon entropy scans. See [ARCHITECTURE.md](ARCHITECTURE.md), [docs/RECIPES.md](docs/RECIPES.md), [docs/CHEATSHEET.md](docs/CHEATSHEET.md), and [docs/MULTI_TENANT_GUIDE.md](docs/MULTI_TENANT_GUIDE.md) for details.
 
 ---
 
