@@ -18,3 +18,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Interactive dark-mode Web Studio on port 5151.
 - Zero external runtime dependencies.
 
+
+## [1.1.0] - 2026-11-15
+### Added
+- Shannon entropy mathematical formula and threshold documentation.
+- Boolean string coercion trap analysis guide.
+- Cross-environment drift analysis and sanitized template generation docs.
