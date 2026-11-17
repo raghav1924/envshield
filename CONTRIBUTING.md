@@ -1,32 +1,31 @@
-# Contributing to EnvShield
+# Contributing to envshield
 
-Thank you for your interest in contributing to **EnvShield**! We welcome community contributions to make environment variable management, secret auditing, and drift detection safer and more reliable.
+Thank you for your interest in contributing to **envshield**! We welcome bug fixes, documentation improvements, and feature proposals.
 
-## Development Setup
+## Development Workflow
 
-1. **Clone the repository:**
+1. Fork the repository and create your feature branch:
    ```bash
-   git clone https://github.com/raghav1924/envshield.git
-   cd envshield
+   git checkout -b feature/amazing-feature
    ```
-
-2. **Compile TypeScript:**
+2. Install dependencies and ensure strict type-checking passes:
    ```bash
    npm run build
    ```
-
-3. **Run Unit Tests:**
+3. Run test suites:
    ```bash
    npm test
    ```
+4. Commit your changes using Conventional Commits:
+   - `feat:` for new capabilities
+   - `fix:` for bug fixes
+   - `docs:` for documentation updates
+   - `test:` for test additions
 
-## Pull Request Guidelines
-
-- Ensure all existing and new unit tests pass (`npm test`).
-- Keep changes zero-dependency: utilize Node.js standard libraries (`node:fs`, `node:path`, `node:http`, `node:crypto`).
-- Write meaningful, conventional commit messages (`feat:`, `fix:`, `docs:`, `test:`).
-- Document new secret pattern signatures in `README.md`.
+## Code Quality Standards
+- Pure TypeScript with strict mode enabled.
+- Zero external runtime npm dependencies whenever feasible.
+- Comprehensive test coverage for all parsing, calculations, and execution paths.
 
 ---
-Maintained by **[Jatin Sharma](https://jatinsh.netlify.app/)** • GitHub: **[@raghav1924](https://github.com/raghav1924)**
-
+*Maintained by [Jatin Sharma](https://jatinsh.netlify.app/)*
