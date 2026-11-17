@@ -1,4 +1,4 @@
-# Security Policy
+# Security Policy for envshield
 
 ## Supported Versions
 
@@ -6,14 +6,16 @@
 | ------- | ------------------ |
 | 1.0.x   | :white_check_mark: |
 
-## Reporting a Vulnerability
+## Reporting Vulnerabilities
 
-If you discover a security issue or secret leak detection bypass in EnvShield, please notify us immediately by emailing **[raghavjatin245@gmail.com](mailto:raghavjatin245@gmail.com)**.
+If you discover a security vulnerability in **envshield**, please do not open a public issue. Instead, report it directly to the maintainer:
 
-Please include:
-1. Vulnerability description and steps to reproduce.
-2. Sample environment configuration triggering the issue.
-3. Impact and severity assessment.
+- **Email:** [raghavjatin245@gmail.com](mailto:raghavjatin245@gmail.com)
+- **Maintainer:** Jatin Sharma ([https://jatinsh.netlify.app/](https://jatinsh.netlify.app/))
 
-Author: **[Jatin Sharma](https://jatinsh.netlify.app/)**
+Please provide:
+1. Detailed description of the vulnerability.
+2. Reproduction steps or proof of concept.
+3. Potential impact and proposed mitigations.
 
+We will acknowledge receipt within 24 hours and provide an estimated disclosure and patch timeline.
