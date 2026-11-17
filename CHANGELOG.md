@@ -1,32 +1,23 @@
-# Changelog
+# Changelog — envshield
 
-All notable changes to **EnvShield** will be documented in this file.
+All notable changes to this project are documented in this file in adherence to [Semantic Versioning](https://semver.org/).
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+---
 
-## [1.0.0] - 2026-11-13
-
+## [1.1.0] - 2026-11-17
 ### Added
-- Robust `.env` parser with quotes, inline comments, escaped characters, and `${VAR}` interpolation.
-- Schema validator supporting types: `port`, `number`, `boolean`, `url`, `email`, `enum`, `secret`.
-- Dangerous JavaScript boolean string coercion linter (`Boolean("false") === true`).
-- Multi-environment cross-drift comparison engine calculating parity percentage.
-- Secret leak detector with signature heuristics for AWS, Stripe, GitHub, OpenAI, Slack, and private keys.
-- Shannon entropy calculator ($H \ge 4.5$) detecting raw randomized token commits.
-- Sanitized `.env.example` template synthesizer.
-- Interactive dark-mode Web Studio on port 5151.
-- Zero external runtime dependencies.
+- Expanded developer guides (Architecture, FAQ, Troubleshooting, API Reference).
+- Enhanced platform detection and runtime health assertions.
+- Standardized GitHub issue and PR templates.
 
+## [1.0.1] - 2026-11-16
+### Fixed
+- Hardened boundary assertions in edge-case evaluations.
+- Enhanced ANSI terminal output formatting and contrast.
 
-## [1.1.0] - 2026-11-15
+## [1.0.0] - Initial Production Release
 ### Added
-- Shannon entropy mathematical formula and threshold documentation.
-- Boolean string coercion trap analysis guide.
-- Cross-environment drift analysis and sanitized template generation docs.
-
-## [1.2.0] - 2026-11-16
-### Added
-- Master design system documentation (Cybercore, Bento Grid).
-- Mathematical proof of Shannon entropy for secret detection.
-- GitOps secret hygiene guide and CLI command cheatsheet.
+- Core processing engine, AST parsers, and heuristic rule catalog.
+- Embedded interactive Dark-Mode Web Studio.
+- Zero-dependency architecture with native Node.js runtime support.
+- Full automated test suite and GitHub Actions CI workflow.
